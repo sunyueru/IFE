@@ -1,0 +1,34 @@
+#content{
+	position: relative;
+	background-color: #eee;
+	border:1px solid #999;
+	padding: 20px;
+	/**/
+	min-height: 600px;
+}
+.left{
+	width: 160px;
+	position: absolute;
+	left: 20px;
+	padding: 20px;
+	background: white;
+}
+.left p{
+	float: right;
+}
+.right{
+	width: 80px;
+	position: absolute;
+	right: 20px;
+	top:20px;
+	padding: 20px;
+	background: white;
+}
+.right .img{
+	margin-bottom: 20px;
+}
+.middle{
+	background: white;
+	padding:20px;
+	margin: 0 160px 0 240px;
+}
