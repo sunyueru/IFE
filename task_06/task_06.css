@@ -1,0 +1,31 @@
+*{margin:0;padding: 0;}
+#wrap{width:980px;height: 1386px;margin: 0 auto;}
+#wrap1{width: 892px;margin: 0 auto;}
+#header{width:100%;height:61px;background: url("images/header.gif") no-repeat;border-bottom:2px solid #938e8c;}
+#word{float: right;color:#d45d5c;font-size: 12px; font-family: "黑体";padding-top:40px; }
+#box1{margin-top:34px;overflow: hidden; }
+#box1 .left{float: left;}
+#box1 .right{float: right;}
+#box2{margin-top: 40px;font-size: 12px;overflow: hidden;}
+#box2 .text{width: 200px;float: left;margin-right: 25px;}
+#box2 .what{width:35px;font-size: 16px;border-bottom: 2px solid #43885C;color: #43885C;font-weight:bold;}
+#box2 .when{width: 35px;font-size: 16px;border-bottom: 2px solid #d2994f;color:#d2994f;font-weight: bold;}
+#box2 .how{width: 35px;font-size: 16px;border-bottom:2px solid #cc7680;font-weight: bold;color: #cc7680;}
+#box2 p{margin: 8px 0;}
+#box2 span{color: #cc7680;opacity: 0.7;font-style: italic;}
+#box3{margin-top: 40px;overflow: hidden;}
+#box3 .left{width: 418px;float: left;  }/*这个float：left不要忘记*/
+#box3 p{margin: 8px 0;}
+#box3 #title{font-size: 42px;font-family: "黑体";font-weight: bold;color:#11456b;border-bottom: 2px solid #11456b; }
+#box3 #the{font-size: 72px;color: #f5e327;font-weight: bold;font-style: italic;}
+#box3 #last{font-size: 33px;}
+#box3 #text{ overflow: hidden; }
+#box3 .left img{float: right;margin:  20px;}
+#box3 .right{width: 457px; float: right;}
+#box3 .first{margin-bottom: 30px;}
+#box3 .second{background-color:#eeeed6;height: 300px; }
+#box3 ul{margin: 0 auto;width: 300px;}
+#box3 li{margin: 10px auto;list-style-image:url("images/trangle.gif");}
+#box3 .second img{float: left;}
+#box3 .yinhao{font-size: 40px;color: red;}
+
