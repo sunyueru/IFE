@@ -1,9 +1,8 @@
 #content{
-	position: relative;
+/*	position: relative;*/
 	background-color: #eee;
 	border:1px solid #999;
 	padding: 20px;
-	/**/
 	min-height: 600px;
 }
 .left{
