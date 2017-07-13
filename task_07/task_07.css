@@ -1,0 +1,475 @@
+/*reset*/
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin:0;
+}
+body{
+	width: 100%;
+	/*最小宽度*/
+	min-width: 1280px;
+	/*color: #999;*/
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #999;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+/*清除浮动*/
+.clearfix:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+.clearfix{
+	zoom:1;
+}
+/*header*/
+.header{
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	padding: 0 60px;
+}
+.header .logo{
+	height: 100%;
+	color: #000;
+	float: left;
+	font-size: 21px;
+	font-weight: bold;
+	font-family: "黑体";
+}
+.header .logo img,.header .login img{
+	vertical-align: middle;
+}
+.header ul{
+	font-size: 14px;
+	float: right;
+}
+.header ul li{
+	float: left;
+}
+/*这边总结一下*/
+.header ul li a{
+	display: inline-block;
+	height: 58px;
+	line-height: 58px;
+	padding: 0 20px;
+}
+.active,ul li a:hover:not(.login){
+	border-bottom: 5px #E74F4D solid;
+	color: #E74F4D;
+}
+/*end*/
+
+/*box_1*/
+.box_1{
+	width: 100%;
+	height: 690px;
+	background:url("images/bg-1.gif") no-repeat;
+	background-size: 100%;
+}
+.box_1 .intro{
+	padding-left: 120px;
+	padding-top: 200px;
+	color: #fff;
+}
+.box_1 .intro h1{
+	font-size: 60px;
+}
+.box_1 .intro p{
+    font-size: 20px;
+}
+.box_1 .intro button{
+	margin-top: 60px;
+	width: 330px;
+	height: 62px;
+	background-color: #E74F4D;
+	outline: none;
+	border: 1px rgba(255,255,255,0) solid;
+	font-size: 30px;
+	color: #fff;
+	cursor: pointer;
+}
+/*结束*/
+
+/*box_2*/
+.box_2{
+   width: 100%;
+}
+.box_2  .box_2_content{
+	float: left;
+	width: 25%;
+	/*padding: 60px;*/
+	margin-top: 60px;
+	margin-bottom: 60px;
+	text-align: center;
+}
+.box_2 .box_2_content img{
+	vertical-align: middle;
+	margin-bottom: 30px;
+}
+.box_2 .box_2_content span{
+	display: block;
+	width: 100%;
+	/*margin-top: 20px;*/
+	color: #999;
+	font-size: 14px;
+	padding: 0 80px;
+	line-height: 2em;
+	border-right: 2px #ccc solid;
+}
+/*结束*/
+
+/*box_3*/
+.box_3{
+	width: 100%;
+	height: 360px;
+	padding-top: 100px;
+	background-color: #EDEDEC;
+	text-align: center;
+}
+/*结束*/
+/*box_4*/
+.box_4{
+	width: 100%;
+	height: 340px;
+	padding-top: 50px;
+	color: #fff;
+	text-align: center;
+	background: url("images/bg-03.gif") no-repeat;
+	background-size: 100%;
+}
+.box_4 h1{
+	margin-bottom: 10px;
+}
+.box_4 .input{
+	position: relative;
+}
+.box_4 input{
+	height: 35px;
+	width: 235px;
+	border: none;
+	background-color: white;
+	padding-left: 10px;
+	padding-right: 20px;
+	margin-top: 20px;
+	margin-right: 30px;
+}
+.box_4 .text{
+	color: #999;
+	background: url("images/mail.gif") no-repeat right center transparent;
+}
+.box_4 .button{
+	 color: #fff;
+	 text-align: center;
+	 font-size: 14px;
+	 background-color: #E74F4D;
+	 cursor: pointer;
+}
+.box_4 ul{
+	position: absolute;
+	left: 403px;
+	height: 156px;
+	overflow-y: hidden;
+	border-bottom: 1px #E74F4D solid;
+}
+.box_4 ul li{
+	 text-align: left;
+	 width: 235px;
+	 height: 26px;
+	 line-height: 26px;
+	 background-color: #e3e3e4;
+	 color: #666;
+	 border-left: 1px #E74F4D solid;
+	 border-right: 1px #E74F4D solid;
+	 cursor: pointer;
+}
+.box_4 .active,.box_4 ul li:hover{
+	background-color: #E74F4D;
+	color: #fff;
+}
+/*结束*/
+/*box_5*/
+.box_5{
+	width: 100%;
+	background-color: #f7f7f7;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding:50px 100px; 
+}
+.box_5 .box_5_cont{
+	 text-align: center;
+	 margin-right: 30px;	
+}
+.box_5 .box_5_cont .pic{
+	border: 1px solid #dadada;
+	margin-bottom: 20px;
+}
+.box_5 .box_5_cont .title{
+	color: #999;
+}
+/*end*/
+/*box_6*/
+.box_6 .top .top_left{ 
+	float: left;
+	width: 67%;
+	height: 500px;
+/*	line-height: 500px;*/
+    padding-top: 150px;
+    background: url("images/bg-2.gif") no-repeat;
+    background-size: 100%;
+    color: #fff;
+    text-align: center;
+}
+.top_left h3{
+	font-size: 50px;
+}
+.top_left h1{
+	font-size: 100px;
+}
+.top_left span{
+    display: block;
+    font-size: 22px;
+}
+.top_right{
+	width: 33%;
+	
+	float: right;
+    padding: 40px;
+}
+.top_right h1{
+	text-align: center;
+	font-size: 22px;
+	margin-bottom: 20px;
+}
+.top_right .red{
+	color: red;
+}
+.top_right p{
+	color: #999;
+	font-size: 16px;
+}
+.top_right .but{
+	text-align: center;
+}
+button{
+	width:100px;
+	height: 30px;
+	font-size: 12px;
+	margin-top:50px;
+    border:1px solid #e74f70;
+    color: #e74f70;
+    cursor: pointer;
+    background-color: white;
+}
+.dot{
+	text-align: center;
+	margin-top: 50px;
+}
+.dot span{
+	 display: inline-block;
+     width: 10px;
+     height: 10px;
+     border: 1px solid #ccc;
+     background-color:white;
+     border-radius:10px;
+}
+.dot .one{
+	 display: inline-block;
+     width: 10px;
+     height: 10px;
+     border: 1px solid #ccc;
+     background-color:#ccc;
+     border-radius:10px;
+}
+.box_6 .bottom{
+	width: 100%;
+	height: 500px;
+}
+.box_6 .bottom .box{
+	width: 33.3%;
+	height: 100%;
+	float: left;
+	font-size: 20px;
+	padding-top: 100px;
+	text-align: center;
+}
+.box_6 .bottom .one{
+	background-color: #E84E4C;
+	color: #fff;
+}
+.box_6 .bottom .one span{
+	display: block;
+	width: 50px;
+	height: 3px;
+	margin:20px auto;
+	background-color: #fff;
+
+}
+.box_6 .bottom .one button{
+     width: 120px;
+     height: 40px;
+     background-color: #E84E4C;
+     color: #fff;
+     font-size: 22px;
+     border:1px solid #fff;
+}
+.box_6 .bottom .one button:hover{
+	 background-color: #fff;
+	 border:1px solid #E84E4C;
+     color:#E84E4C ;
+}
+.box_6 .bottom .two{
+	color: #000;
+}
+.box_6 .bottom .two span{
+    display: block;
+	width: 50px;
+	height: 3px;
+	margin:20px auto;
+	background-color: #000;
+}
+.box_6 .bottom .two button{
+	 width: 120px;
+     height: 40px; 
+     color: #E84E4C;
+     font-size: 22px;
+     border:1px solid  #E84E4C;
+}
+.box_6 .bottom .two button:hover{
+	 background-color:#E84E4C; ;
+	 color: #fff;
+}
+.box_6 .bottom .three{
+	background: url("images/bg-3.gif") no-repeat;
+}
+/*结束*/
+/*box_7*/
+.box_7{
+	width: 100%;
+	height:600px;
+	margin:60px auto;
+}
+.box_7_cont{
+	width: 1200px;
+	margin:0 auto;
+}
+.box_7 .top{
+	width: 500px;
+	margin:30px auto;
+	text-align: center;
+}
+.box_7 .top span{
+	display: block;
+	width: 40px;
+	height: 2px;
+	margin:30px auto;
+	background-color: #E84E4C;
+}
+.box_7 .top p{
+	color: #999;
+	font-size: 12px;
+}
+.box_7 .text{
+    width: 400px;
+}
+.box_7 .text .content{
+	margin-bottom: 50px;
+}
+.box_7 .text .content  .title{
+	text-align: left;
+	color:  #6C5C5C;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+.box_7 .text .content p{
+	text-align: left;
+	color:  #B3AFAC;
+	font-size: 14px;
+}
+.box_7 .text .content span{
+	display: block;
+	float: right;
+	color:  #B3AFAC;
+	font-size: 14px;
+}
+.box_7 .form{
+	width: 600px;
+	margin-left: 30px;
+}
+.box_7 .form input{
+	border:none;
+	margin:20px;
+}
+.box_7 .form input[type="text"]{
+	width: 250px;
+	height: 40px;
+	background-color: #e3e3e3;
+}
+.form textarea{
+	background-color: #e3e3e3;
+	margin:20px;
+	width: 560px;
+}
+.box_7 .form input[type="submit"]{
+	width: 560px;
+	height: 50px;
+}
+
+/*footer*/
+.footer{
+   width: 100%；
+}
+.footer .top{
+	height:300px;
+	margin-top: 50px;
+	padding-top: 50px;
+	text-align: center;
+    background-color: #333;
+    color: #999;
+}
+.footer .top h1{
+	margin-bottom: 20px;
+}
+.footer .input{
+	width: 500px;
+	margin: 20px auto;
+	height: 50px;
+}
+.footer .email{
+	float: left;
+	padding-left: 10px;
+	width: 400px;
+	height: 50px;
+	border:0;
+}
+.footer .submit{
+	width: 100px;
+	height: 50px;
+	border:0;
+
+}
+.footer .bottom{
+	width: 100%;
+	height: 80px;
+	color: #999;
+	background-color: #0F0F0F;
+	padding: 20px 80px;
+}
+.bottom .back{
+	float: right;
+}
+/*结束*/
+
+
+
