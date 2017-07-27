@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>task15</title>
+	<meta charset="utf-8">
+</head>
+<body>
+<ul id="source">
+	<li>北京空气质量：<b>90</b></li>
+    <li>上海空气质量：<b>70</b></li>
+    <li>天津空气质量：<b>80</b></li>
+    <li>广州空气质量：<b>50</b></li>
+    <li>深圳空气质量：<b>40</b></li>
+    <li>福州空气质量：<b>32</b></li>
+    <li>成都空气质量：<b>90</b></li>
+</ul>
+<ul id="resort">
+    <!-- 
+    <li>第一名：北京空气质量：<b>90</b></li>
+    <li>第二名：北京空气质量：<b>90</b></li>
+    <li>第三名：北京空气质量：<b>90</b></li>
+     -->
+
+</ul>
+<button id="sort-btn">排序</button>
+<script type="text/javascript">
+function getData() {
+     var ul=document.getElementById("source");
+     var lis=ul.getElementsByTagName("li");
+    //console.log(lis[0]);
+    //alert(lis.length);
+    // var B=lis[0].getElementsByTagName("b");
+    // alert(B);
+    // console.log(B);
+    // var b=lis[0].getElementsByTagName("b")[0].innerHTML;
+    // console.log(b);
+     var data=new Array();
+     for(var i=0;i<lis.length;i++){
+         var city=lis[i].innerHTML.split("空气质量：")[0];
+         // var num=lis[i].getElementsByTagName("b")[0],不加[0]试试？
+         var num=lis[i].getElementsByTagName("b")[0].innerHTML;
+         data.push([city,num]);
+     }
+     //alert(data);
+     return data;
+}
+
+function sortAqiData(data) {
+	data.sort(function(a,b){
+		return a[1]-b[1];
+	})
+	//alert(data);
+	return data;
+}
+// 测试代码
+// var data=getData();
+// sortAqiData(data);
+
+function render(data) {
+   var resort=document.getElementById("resort");
+   var list=["一","二","三","四","五","六","七"];
+   var myinnerHTML="";
+   for(var i=0;i<data.length;i++){
+       myinnerHTML += "<li>第"+list[i]+"名："+data[i][0]+"空气质量："+"<b>"+data[i][1]+"</b></li>";
+   }
+     resort.innerHTML=myinnerHTML;
+}
+  
+function btnHandle() {
+   var aqiData=getData();
+   aqiData=sortAqiData(aqiData);
+   render(aqiData);
+}
+function init() {
+   var button=document.getElementById("sort-btn");
+   button.onclick=function(){
+   	btnHandle();
+   }
+  }
+init();
+</script>
+</body>
+</html>
