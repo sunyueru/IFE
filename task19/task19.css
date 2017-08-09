@@ -1,0 +1,12 @@
+/*#chart{
+	margin-top: 20px;
+	border: 1px solid red;
+}*/
+#chart span{
+            display: inline-block;
+			background-color: red;
+			color: white;
+			padding: 20px;
+			margin:20px;
+			vertical-align: bottom;
+}
