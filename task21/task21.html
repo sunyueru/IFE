@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>task20</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		#tag{
+			margin:20px;
+		}
+		#hobby{
+			margin-left: 50px;
+			margin-top: 50px;
+		}
+		#hobbyContainer{
+			margin-top: 20px;
+		}
+		#tagContainer span{
+			padding: 10px;
+			margin:10px;
+			background-color: #000;
+            color: #fff;
+		}
+		#tagContainer span:hover{
+			background-color: red;
+	        cursor: pointer;
+		}
+		#tagContainer span:hover:before{
+			content:"点击删除";
+		}
+		#hobbyContainer span{
+			padding: 10px;
+			margin:10px;
+            background-color: #000;
+            color: #fff;
+		}
+        #hobbyContainer span:hover{
+        	background-color: green;
+        	cursor: pointer;
+        }
+        #hobbyContainer span:hover:before{
+        	content: "点击删除";
+        }
+	</style>
+</head>
+<body>
+  <div id="tag">
+  	<span>Tag:</span>
+  	<input type="text" id="tagInput">
+  </div>
+  <div id="tagContainer"></div>
+  <div id="hobby">
+  	<textarea id="hobbyInput"></textarea>
+  	<br/>
+    <button id="hobbyConfirm">确认兴趣爱好</button>
+  </div>
+  <div id="hobbyContainer"></div>
+  <script type="text/javascript" src="task21.js"></script>
+</body>
+</html>
