@@ -61,7 +61,7 @@ function updateTags(){
 }
 // hobby的输入处理函数
 function updateHobby(){
-	//alert("updateHobby");
+	alert("updateHobby");
 	var str=hobbyInput.value;
 	var data=str.trim().split(/[,， ；;\t\r\n]/);
 	// 也可以和上面一样用for循环吧。
