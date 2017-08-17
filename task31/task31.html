@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>task31</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	    *{
+	    	font-family: "微软雅黑";
+	    	font-size: 20px;
+	    }
+		fieldset{
+			border: none;
+			text-align: center;
+		}
+		#company{
+			padding-left: 10px;
+			font-size: 15px;
+		}
+		#studentOption{
+			display: none;
+		}
+		#nostudentOption{
+			display: none;
+		}
+
+	</style>
+</head>
+<body>
+<form>
+  <fieldset id="option">
+  	  <label for="student">
+  	  <!-- 要想实现两个radio二选一就必须把两个name设置成一样的 -->
+	 	<input type="radio" id="student" value="在校生" name="options" >在校生
+	 </label>
+	 <label for="nostudent">
+	 	<input type="radio" id="nostudent" name="options" value="非在校生">非在校生
+	 </label>
+  </fieldset>
+  <fieldset id="studentOption">
+  	<label for="city">
+  		你的城市：
+  		<select id="city">
+  			<option>江苏</option>
+  			<option>重庆</option>
+  			<option>北京</option>
+  		</select>
+  	</label>
+  	<label for="school">
+  		你的学校：
+  		<select id="school"></select>
+  	</label>
+  </fieldset>
+  <fieldset id="nostudentOption">
+  	 <label for="company">
+  	 	你就职的公司：<input type="text" id="company" placeholder="请填写公司名称">
+  	 </label>
+  </fieldset>
+</form>
+<script type="text/javascript" src="task31.js"></script>
+</body>
+</html>
